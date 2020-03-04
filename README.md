@@ -3,6 +3,9 @@
 Building a system with Kafka, that parses recipes from an online API and alerts the user of recipes that exceed a calorie threshold.
 the system uses microservices written in python, using Kafka-python.
 
+Pipeline illustration:
+![Alt text](calorie_alert_pipeline_Kafka.png?raw=true "Pipeline illustration")
+
 ## Installation
 
 Kafka-python is needed to get the Python Kafka API (pip install Kafka-python)

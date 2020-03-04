@@ -9,11 +9,11 @@ Kafka-python is needed to get the Python Kafka API (pip install Kafka-python)
 
 ## Usage
 
-start zookeeper (on Windows, run ".\bin\windows\zookeeper-server-start.bat config/zookeeper.properties" in the kafka directory)
-start Kafka server (on Windows, run ".\bin\windows\kafka-server-start.bat config/server.properties" in the kafka directory)
-run producer-raw-recipies.py to get recipes from https://www.allrecipes.com and write them to the 'raw_recipes' topic in kafka
-run producer_consumer_parse_recipes.py to get the raw recipes and parse them by (title, description, ingrediants, calorie-count, publisher) and write them to the 'parsed_recipes' topic in kafka  
-run consumer-notification.py to get parsed recipes from kafka and alert the user which recipe has a calorie-count, greater than "calories_threshold"
+1. start zookeeper (on Windows, run ".\bin\windows\zookeeper-server-start.bat config/zookeeper.properties" in the kafka directory)
+2. start Kafka server (on Windows, run ".\bin\windows\kafka-server-start.bat config/server.properties" in the kafka directory)
+3. run producer-raw-recipies.py to get recipes from https://www.allrecipes.com and write them to the 'raw_recipes' topic in kafka
+4. run producer_consumer_parse_recipes.py to get the raw recipes and parse them by (title, description, ingrediants, calorie-count, publisher) and write them to the 'parsed_recipes' topic in kafka  
+5. run consumer-notification.py to get parsed recipes from kafka and alert the user which recipe has a calorie-count, greater than "calories_threshold"
 
 ## Credits
 
